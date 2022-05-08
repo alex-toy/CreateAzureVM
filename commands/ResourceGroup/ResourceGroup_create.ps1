@@ -7,13 +7,13 @@
 ################################################################
 #LIST OF ALL LOCATIONS :
 
-#az resource list --location $MyLocation
+#az resource list --location $RGLocation
 
 
 ################################################################
 #CREATE A RESOURCE GROUP :
 
-az group create --name $ResourceGroupName --location $MyLocation
+az group create --name $RGName --location $RGLocation
 
 
 

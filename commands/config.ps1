@@ -2,10 +2,10 @@
 # resource Group :
 
 #southcentralus centralus francecentral
-$Global:RGLocation = "centralus"
+$Global:RGLocation = "francecentral"
 "resource Group Location : " + $RGLocation
 
-$Global:RGName = "create-vm-starter"
+$Global:RGName = "create-vm-RG"
 "Resource Group Name : " + $RGName
 
 
@@ -19,7 +19,7 @@ $Global:VMName = "linux-vm-west"
 $Global:ImageName = "UbuntuLTS"
 "Image name : " + $ImageName
 
-$Global:Size = "Standard_B1s"
+$Global:Size = "Standard_L8s_v2"
 "Size : " + $Size
 
 $Global:AdminUsername = "alexadmin"
@@ -53,7 +53,7 @@ $Global:SQLAdminPassword = "p@ssword1234"
 $Global:SQLServerName = "alexei-server-test2"
 "SQL server name : " + $SQLServerName
 
-$Global:SQLLocation = "francecentral"
+$Global:SQLLocation = "francesouth"
 "SQL Location : " + $SQLLocation
 
 $Global:SQLEnablePublicNetwork = "true"
