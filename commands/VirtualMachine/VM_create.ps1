@@ -1,5 +1,18 @@
+"###############################################################"
+"Now running : " + $MyInvocation.MyCommand.Path
+"###############################################################"
+
 ################################################################
-#CREATE A VM :
+"VM configuration :"
+$Global:VMName = "alexei-vm"
+$Global:ImageName = "UbuntuLTS"
+$Global:Size = "Standard_L8s_v2"
+$Global:AdminUsername = "alexadmin"
+$Global:Port = "80"
+$Global:storageSku = "Standard_HDD"
+
+################################################################
+"CREATE A VM :"
 
 az vm create `
    --resource-group $RGName `
@@ -22,12 +35,9 @@ az vm open-port `
 
 
 
-#Reset password
-# az vm user update `
-#   -n $VMName `
-#   -g $ResourceGroupName `
-#   -u $AdminUsername `
-#   -p ""
+
+
+
 
 
 
